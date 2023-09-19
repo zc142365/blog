@@ -30,7 +30,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris">
 <meta property="article:published_time" content="2023-09-01T13:21:00.000Z">
-<meta property="article:modified_time" content="2023-09-18T05:17:46.729Z">
+<meta property="article:modified_time" content="2023-09-19T21:12:47.760Z">
 <meta property="article:author" content="Jongsim">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris">
@@ -195,7 +195,7 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
       
         <a class="archive-link" href="/archives/2023/09 ">
           September 2023 
-          <div class="archive-count notranslate">1 </div>
+          <div class="archive-count notranslate">2 </div>
         </a>
       
         <a class="archive-link" href="/archives/2023/08 ">
@@ -213,6 +213,12 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     <div class="widget">
       <h3 class="widget-title">Recent Posts</h3>
       <ul>
+        
+          <a class="recent-link" href="/2023/09/20/Languageization%20for%20each%20country%20with%20javascript/" title="Languageization for each country with javascript" >
+            <div class="recent-link-text">
+              Languageization for each country with javascript
+            </div>
+          </a>
         
           <a class="recent-link" href="/2023/09/01/How%20I%20Created%20a%20Blog/" title="How I Created a Blog" >
             <div class="recent-link-text">
@@ -304,12 +310,12 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 <ul>
 <li>Entered command<pre>
 <code>
-npm install -g pnpm
+  npm install -g pnpm
 </code>
 </pre>
-Restart terminal<pre>
+  Restart terminal<pre>
 <code>
-pnpm setup
+  pnpm setup
 </code>
 </pre></li>
 </ul>
@@ -322,22 +328,22 @@ pnpm setup
 <li><p>hexo installation address : <a target="_blank" rel="noopener" href="https://hexo.io/docs/index.html">https://hexo.io/docs/index.html</a></p>
 <pre>
 <code>
-pnpm install -g hexo-cli
+  pnpm install -g hexo-cli
 </code>
 </pre>
 </li>
 <li><p>Restart terminal and create hexo project</p>
 <pre>
 <code>
-hexo init blog
+  hexo init blog
 </code>
 </pre>
 </li>
 <li><p>Install required packages for hexo project with pnpm from project</p>
 <pre>
 <code>
-cd blog
-pnpm install
+  cd blog
+  pnpm install
 </code>
 </pre>
 </li>
@@ -347,130 +353,130 @@ I chose vivia among several themes.
 
 <pre>
 <code>
-git clone https://github.com/saicaca/hexo-theme-vivia themes/vivia
-cd themes
-pnpm install
-cd ../
+  git clone https://github.com/saicaca/hexo-theme-vivia themes/vivia
+  cd themes
+  pnpm install
+  cd ../
 </code>
 </pre>
 </li>
 <li><p>Theme settings need to be written in _config.yml inside the project.</p>
 <pre>
 <code>
-theme: vivia
+  theme: vivia
 </code>
 </pre>
 </li>
 <li><p>The vivia theme requires other settings, so _config.vivia.yml must also be written.</p>
 <pre>
 <code>
-# Header
-menu:
-Home: /
-Archives: /archives
-About: /about
-rss: /atom.xml
+  # Header
+  menu:
+  Home: /
+  Archives: /archives
+  About: /about
+  rss: /atom.xml
 
-home:
-style: default           # default, detail
+  home:
+  style: default           # default, detail
 
-favicon:                   # Path to the custom favicon (e.g. "/favicon.png" if your favicon file is located at /source/favicon.png)
+  favicon:                   # Path to the custom favicon (e.g. "/favicon.png" if your favicon file is located at /source/favicon.png)
 
-# Banner
-banner:
-enable: false            # Display banner
-url: /assets/banner.png
-position: center         # Specifies the alignment of the image, see the "object-position" property in CSS
-onAllPages: true         # Display banner on all pages
+  # Banner
+  banner:
+  enable: false            # Display banner
+  url: /assets/banner.png
+  position: center         # Specifies the alignment of the image, see the "object-position" property in CSS
+  onAllPages: true         # Display banner on all pages
 
-# Appearence
-hue: 270                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
+  # Appearence
+  hue: 270                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
 
-# Sidebar
-sidebar:
-widgets:                 # Plugins to be enabled (profile, category, tag, archive, recent_posts)
-    normal:                # Scroll along with the page
-    - profile
-    sticky:                # Stick to the top of the page
-    - category
-    - tag
-    - archive
-    - recent_posts
+  # Sidebar
+  sidebar:
+  widgets:                 # Plugins to be enabled (profile, category, tag, archive, recent_posts)
+      normal:                # Scroll along with the page
+      - profile
+      sticky:                # Stick to the top of the page
+      - category
+      - tag
+      - archive
+      - recent_posts
 
-# Widget behavior
-archive_type: 'monthly'
-recent_posts_limits: 5
+  # Widget behavior
+  archive_type: 'monthly'
+  recent_posts_limits: 5
 
-# Personal info
-avatar: 
-author: Your Name
-subtitle: This is the subtitle
-links:
-- name: Twitter
-    icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
-    url: https://twitter.com
-- name: Steam
-    icon: fa-brands fa-steam
-    url: https://store.steampowered.com
-- name: GitHub
-    icon: fa-brands fa-github
-    url: https://github.com
+  # Personal info
+  avatar: 
+  author: Your Name
+  subtitle: This is the subtitle
+  links:
+  - name: Twitter
+      icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
+      url: https://twitter.com
+  - name: Steam
+      icon: fa-brands fa-steam
+      url: https://store.steampowered.com
+  - name: GitHub
+      icon: fa-brands fa-github
+      url: https://github.com
 
-comment:
-valine:
-    enable: false
-    appId: 
-    appKey: 
-    placeholder: Just go go
-    pageSize: 10
-    highlight: true
-    serverURLs: 
-    # Other supported parameters can be added here if needed
-    # Visit https://valine.js.org/configuration.html for more details
+  comment:
+  valine:
+      enable: false
+      appId: 
+      appKey: 
+      placeholder: Just go go
+      pageSize: 10
+      highlight: true
+      serverURLs: 
+      # Other supported parameters can be added here if needed
+      # Visit https://valine.js.org/configuration.html for more details
 
 
-#Analytics
-gauges_analytics: false
-google_analytics: false #UA-xxxxxx
-baidu_analytics: false # ddxxxxxxxxxxxxxxxxx In the https://hm.baidu.com/hm.js? Afterwards
+  #Analytics
+  gauges_analytics: false
+  google_analytics: false #UA-xxxxxx
+  baidu_analytics: false # ddxxxxxxxxxxxxxxxxx In the https://hm.baidu.com/hm.js? Afterwards
 
-#Copyright
-copyright: #<a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris"></a>
+  #Copyright
+  copyright: #<a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris"></a>
 </code>
 </pre>
 </li>
 <li><p>After creating the page, deploy the hexo project.<br>And the hexo command can be found at <a target="_blank" rel="noopener" href="https://hexo.io/docs">https://hexo.io/docs</a></p>
 <pre>
 <code>
-hexo new page about
-hexo clean
-hexo gen
-hexo server
+  hexo new page about
+  hexo clean
+  hexo gen
+  hexo server
 </code>
 </pre></li>
 <li><p>After entering the above command, deployment is completed at localhost:4000 and connection is possible.<br>The above must be done after creating a repository on github.<br>If you have confirmed that the server has been deployed well, set it in _config.yml to deploy to github.</p>
 <pre>
 <code>
-url: https://Myname.github.io
+  url: https://Myname.github.io
 
-deploy:
-    type: 'git'
-    repo: https://github.com/Myname/myname.github.io
-    branch: main
+  deploy:
+      type: 'git'
+      repo: https://github.com/Myname/myname.github.io
+      branch: main
 </code>
 </pre>
 </li>
 <li><p>This command is a hexo command for deployment and should be performed assuming that you have completed setting _config.yml and set up a github account.</p>
 <pre>
 <code>
-hexo deploy
+  hexo deploy
 </code>
 </pre>
 </li>
 <li><p>If you’ve made it this far, distribution will have been successful.</p>
 </li>
 </ul>
-<p>If there is anything you don’t know about this article, please email <a href="mailto:&#122;&#x63;&#49;&#x34;&#50;&#x33;&#54;&#53;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#122;&#x63;&#49;&#x34;&#50;&#x33;&#54;&#53;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#109;</a></p>
+<p>If there is anything you don’t know about this article, please email <a href="mailto:&#122;&#x63;&#49;&#52;&#x32;&#x33;&#x36;&#53;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#x6d;">&#122;&#x63;&#49;&#52;&#x32;&#x33;&#x36;&#53;&#x40;&#x67;&#109;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#x6d;</a></p>
 <h2 id="Next-post-planned"><a href="#Next-post-planned" class="headerlink" title="Next post planned"></a>Next post planned</h2><p>My next article will be about language localization or cloud engineering for my blog.</p>
 
         
@@ -484,10 +490,15 @@ hexo deploy
   
     
 <nav id="article-nav">
-  <a class="article-nav-btn left  disabled "
+  <a class="article-nav-btn left "
+    
+      href="/2023/09/20/Languageization%20for%20each%20country%20with%20javascript/"
+      title="Languageization for each country with javascript"
      >
     <i class="fa-solid fa-angle-left"></i>
     <p class="title-text">
+      
+        Languageization for each country with javascript
         
     </p>
   </a>
