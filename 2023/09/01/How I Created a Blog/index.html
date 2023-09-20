@@ -28,12 +28,10 @@
 <meta property="og:site_name" content="JongSim&#39;s blog">
 <meta property="og:description" content="Why the Framework?To create a blog quickly, I looked for a framework that made it easy to create a static blog. Found and selected frameworksFramework typeJekyll, hugo, hexo framework of your choiceTh">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris">
 <meta property="article:published_time" content="2023-09-01T13:21:00.000Z">
-<meta property="article:modified_time" content="2023-09-20T04:26:46.931Z">
+<meta property="article:modified_time" content="2023-09-20T05:10:08.355Z">
 <meta property="article:author" content="Jongsim">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris">
   
   
     <link rel="icon" media="(prefers-color-scheme: light)" href="/images/favicon-light-32.png" sizes="32x32">
@@ -308,16 +306,13 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 <li>Install another package manager (optional)<br>I used cmd in a windows environment</li>
 </ol>
 <ul>
-<li>Entered command<pre>
-<code>
-  npm install -g pnpm
-</code>
-</pre>
-  Restart terminal<pre>
-<code>
-  pnpm setup
-</code>
-</pre></li>
+<li>Entered command<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g pnpm</span><br></pre></td></tr></table></figure>
+</div>
+  Restart terminal
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm setup</span><br></pre></td></tr></table></figure>
+<div></li>
 </ul>
 <ol start="3">
 <li>Installing and using hexo</li>
@@ -326,157 +321,56 @@ eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 <li><p>Since I installed pnpm, I will explain based on pnpm.</p>
 </li>
 <li><p>hexo installation address : <a target="_blank" rel="noopener" href="https://hexo.io/docs/index.html">https://hexo.io/docs/index.html</a></p>
-<pre>
-<code>
-  pnpm install -g hexo-cli
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+</div>
 </li>
 <li><p>Restart terminal and create hexo project</p>
-<pre>
-<code>
-  hexo init blog
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
+</div>
 </li>
 <li><p>Install required packages for hexo project with pnpm from project</p>
-<pre>
-<code>
-  cd blog
-  pnpm install
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">pnpm install</span><br></pre></td></tr></table></figure>
+<div>
 </li>
 <li><p>Find a theme to apply to your hexo project<br>address : <a target="_blank" rel="noopener" href="https://hexo.io/themes/index.html">https://hexo.io/themes/index.html</a></p>
 <br>
 I chose vivia among several themes.
 
-<pre>
-<code>
-  git clone https://github.com/saicaca/hexo-theme-vivia themes/vivia
-  cd themes
-  pnpm install
-  cd ../
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/saicaca/hexo-theme-vivia themes/vivia</span><br><span class="line">cd themes</span><br><span class="line">pnpm install</span><br><span class="line">cd ../</span><br></pre></td></tr></table></figure>
+</div>
 </li>
 <li><p>Theme settings need to be written in _config.yml inside the project.</p>
-<pre>
-<code>
-  theme: vivia
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: vivia</span><br></pre></td></tr></table></figure>
+</div>
 </li>
 <li><p>The vivia theme requires other settings, so _config.vivia.yml must also be written.</p>
-<pre>
-<code>
-  # Header
-  menu:
-  Home: /
-  Archives: /archives
-  About: /about
-  rss: /atom.xml
-
-  home:
-  style: default           # default, detail
-
-  favicon:                   # Path to the custom favicon (e.g. "/favicon.png" if your favicon file is located at /source/favicon.png)
-
-  # Banner
-  banner:
-  enable: false            # Display banner
-  url: /assets/banner.png
-  position: center         # Specifies the alignment of the image, see the "object-position" property in CSS
-  onAllPages: true         # Display banner on all pages
-
-  # Appearence
-  hue: 270                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)
-
-  # Sidebar
-  sidebar:
-  widgets:                 # Plugins to be enabled (profile, category, tag, archive, recent_posts)
-      normal:                # Scroll along with the page
-      - profile
-      sticky:                # Stick to the top of the page
-      - category
-      - tag
-      - archive
-      - recent_posts
-
-  # Widget behavior
-  archive_type: 'monthly'
-  recent_posts_limits: 5
-
-  # Personal info
-  avatar: 
-  author: Your Name
-  subtitle: This is the subtitle
-  links:
-  - name: Twitter
-      icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search
-      url: https://twitter.com
-  - name: Steam
-      icon: fa-brands fa-steam
-      url: https://store.steampowered.com
-  - name: GitHub
-      icon: fa-brands fa-github
-      url: https://github.com
-
-  comment:
-  valine:
-      enable: false
-      appId: 
-      appKey: 
-      placeholder: Just go go
-      pageSize: 10
-      highlight: true
-      serverURLs: 
-      # Other supported parameters can be added here if needed
-      # Visit https://valine.js.org/configuration.html for more details
-
-
-  #Analytics
-  gauges_analytics: false
-  google_analytics: false #UA-xxxxxx
-  baidu_analytics: false # ddxxxxxxxxxxxxxxxxx In the https://hm.baidu.com/hm.js? Afterwards
-
-  #Copyright
-  copyright: #<a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris"></a>
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"># Header</span><br><span class="line">menu:</span><br><span class="line">Home: /</span><br><span class="line">Archives: /archives</span><br><span class="line">About: /about</span><br><span class="line">rss: /atom.xml</span><br><span class="line"></span><br><span class="line">home:</span><br><span class="line">style: default           # default, detail</span><br><span class="line"></span><br><span class="line">favicon:                   # Path to the custom favicon (e.g. &quot;/favicon.png&quot; if your favicon file is located at /source/favicon.png)</span><br><span class="line"></span><br><span class="line"># Banner</span><br><span class="line">banner:</span><br><span class="line">enable: false            # Display banner</span><br><span class="line">url: /assets/banner.png</span><br><span class="line">position: center         # Specifies the alignment of the image, see the &quot;object-position&quot; property in CSS</span><br><span class="line">onAllPages: true         # Display banner on all pages</span><br><span class="line"></span><br><span class="line"># Appearence</span><br><span class="line">hue: 270                   # The hue of the theme color (e.g. red: 0, orange: 60, blue: 260, purple: 300, pink: 345)</span><br><span class="line"></span><br><span class="line"># Sidebar</span><br><span class="line">sidebar:</span><br><span class="line">widgets:                 # Plugins to be enabled (profile, category, tag, archive, recent_posts)</span><br><span class="line">    normal:                # Scroll along with the page</span><br><span class="line">    - profile</span><br><span class="line">    sticky:                # Stick to the top of the page</span><br><span class="line">    - category</span><br><span class="line">    - tag</span><br><span class="line">    - archive</span><br><span class="line">    - recent_posts</span><br><span class="line"></span><br><span class="line"># Widget behavior</span><br><span class="line">archive_type: &#x27;monthly&#x27;</span><br><span class="line">recent_posts_limits: 5</span><br><span class="line"></span><br><span class="line"># Personal info</span><br><span class="line">avatar: </span><br><span class="line">author: Your Name</span><br><span class="line">subtitle: This is the subtitle</span><br><span class="line">links:</span><br><span class="line">- name: Twitter</span><br><span class="line">    icon: fa-brands fa-twitter      # Find icon codes at https://fontawesome.com/search</span><br><span class="line">    url: https://twitter.com</span><br><span class="line">- name: Steam</span><br><span class="line">    icon: fa-brands fa-steam</span><br><span class="line">    url: https://store.steampowered.com</span><br><span class="line">- name: GitHub</span><br><span class="line">    icon: fa-brands fa-github</span><br><span class="line">    url: https://github.com</span><br><span class="line"></span><br><span class="line">comment:</span><br><span class="line">valine:</span><br><span class="line">    enable: false</span><br><span class="line">    appId: </span><br><span class="line">    appKey: </span><br><span class="line">    placeholder: Just go go</span><br><span class="line">    pageSize: 10</span><br><span class="line">    highlight: true</span><br><span class="line">    serverURLs: </span><br><span class="line">    # Other supported parameters can be added here if needed</span><br><span class="line">    # Visit https://valine.js.org/configuration.html for more details</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#Analytics</span><br><span class="line">gauges_analytics: false</span><br><span class="line">google_analytics: false #UA-xxxxxx</span><br><span class="line">baidu_analytics: false # ddxxxxxxxxxxxxxxxxx In the https://hm.baidu.com/hm.js? Afterwards</span><br><span class="line"></span><br><span class="line">#Copyright</span><br><span class="line">copyright: #&lt;a target=&quot;_blank&quot; rel=&quot;noopener&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; style=&quot;margin-inline:5px&quot; title=&quot;本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;amp;logo=Claris&quot;&gt;&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+</div>
 </li>
 <li><p>After creating the page, deploy the hexo project.<br>And the hexo command can be found at <a target="_blank" rel="noopener" href="https://hexo.io/docs">https://hexo.io/docs</a></p>
-<pre>
-<code>
-  hexo new page about
-  hexo clean
-  hexo gen
-  hexo server
-</code>
-</pre></li>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br><span class="line">hexo clean</span><br><span class="line">hexo gen</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+</div></li>
 <li><p>After entering the above command, deployment is completed at localhost:4000 and connection is possible.<br>The above must be done after creating a repository on github.<br>If you have confirmed that the server has been deployed well, set it in _config.yml to deploy to github.</p>
-<pre>
-<code>
-  url: https://Myname.github.io
-
-  deploy:
-      type: 'git'
-      repo: https://github.com/Myname/myname.github.io
-      branch: main
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">url: https://Myname.github.io</span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line">    type: &#x27;git&#x27;</span><br><span class="line">    repo: https://github.com/Myname/myname.github.io</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure>
+</div>
 </li>
 <li><p>This command is a hexo command for deployment and should be performed assuming that you have completed setting _config.yml and set up a github account.</p>
-<pre>
-<code>
-  hexo deploy
-</code>
-</pre>
+<div class=notranslate>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+</div>
 </li>
 <li><p>If you’ve made it this far, distribution will have been successful.</p>
 </li>
 </ul>
-<p>If there is anything you don’t know about this article, please email <a href="mailto:&#x7a;&#99;&#49;&#x34;&#50;&#51;&#x36;&#53;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#x7a;&#99;&#49;&#x34;&#50;&#51;&#x36;&#53;&#x40;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;</a></p>
+<p>If there is anything you don’t know about this article, please email <a href="mailto:&#x7a;&#99;&#x31;&#x34;&#x32;&#x33;&#x36;&#53;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x7a;&#99;&#x31;&#x34;&#x32;&#x33;&#x36;&#53;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a></p>
 <h2 id="Next-post-planned"><a href="#Next-post-planned" class="headerlink" title="Next post planned"></a>Next post planned</h2><p>My next article will be about language localization or cloud engineering for my blog.</p>
 
         
