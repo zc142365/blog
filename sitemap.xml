@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://blog.porog.top/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/archives/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/about/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/archives/2023/10/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/archives/2023/09/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/archives/2023/08/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/2023/10/04/Add%20comment%20function%20(giscus)%20to%20blog/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/2023/09/20/Languageization%20for%20each%20country%20with%20javascript/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/2023/09/01/How%20I%20Created%20a%20Blog/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/2023/08/31/Reasons%20for%20writing%20a%20development%20blog/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/2023/08/30/Images%20add/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://blog.porog.top/2023/08/30/Opening%20the%20first%20blog/</loc>
+  <lastmod>2023-12-01T01:59:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
